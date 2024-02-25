@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP in Js</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+    <div class = "form">
+        <h1>OTP generator</h1>
+        <input type = "email" id = "email" placeholder = "Enter Email or phone number">
+        <div class = "otpverify">
+            <input type = "text" id = "otp-inp" placeholder="Enter the OTP send to your email or phone">
+            <button class = "btn" id ="otp-btn">Verify</button>
+        </div>
+        <button class = 'btn' onclick="sendOTP()">Send OTP</button>
+        <script src = "emailotp.js"></script>
+    </div>
+    
+</body>
+</html>

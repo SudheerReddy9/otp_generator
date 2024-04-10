@@ -8,16 +8,17 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body>
-    <div class = "form">
+    <div class="form">
         <h1>OTP generator</h1>
-        <input type = "email" id = "email" placeholder = "Enter Email or phone number">
-        <div class = "otpverify">
-            <input type = "email" id = "otp-inp" placeholder="Enter the OTP send to your email or phone">
-            <button class = "btn" id ="otp-btn">Verify</button>
+        <input type="email" id="email" placeholder="Enter Email or phone number">
+        <div class="otpverify" style="display: none;">
+            <input type="text" id="otp-inp" placeholder="Enter the OTP sent to your email or phone">
+            <button class="btn" id="otp-btn">Verify</button>
         </div>
-        <button class = 'btn' onclick="sendOTP()">Send OTP</button>
-        <script src = "emailotp.js"></script>
+        <button class='btn' onclick="sendOTP()">Send OTP</button>
+        <script src="emailotp.js"></script>
     </div>
+    
     
 </body>
 </html>
